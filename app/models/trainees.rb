@@ -1,4 +1,4 @@
-class Trainee < ApplicationRecord
+class Trainees < ApplicationRecord
     has_many :applications
     has_many :reviews
     has_one :trainer, through: :applications

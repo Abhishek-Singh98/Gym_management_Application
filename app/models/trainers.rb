@@ -1,4 +1,4 @@
-class Trainer < ApplicationRecord
+class Trainers < ApplicationRecord
  has_many :applications
  has_many :gyms
  has_many :trainees, through: :application   
