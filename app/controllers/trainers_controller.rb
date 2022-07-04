@@ -1,9 +1,0 @@
-class TrainersController < ApplicationController
-    def show
-        @trainers = Trainer.find(params[:id])
-    end
-
-    def index
-        @trainers = Trainer.all
-    end
-end

@@ -3,6 +3,6 @@ Rails.application.routes.draw do
     get'/SignUp', to: 'home#create'
     get'About' , to: 'home#about'
     get'/Main' , to: 'home#first'
-    resources :trainers , only: [:show,:index]
-    resources :gyms , only: [:show,:index]
+    resources :trainer , only: [:show,:index]
+    resources :gym , only: [:show,:index]
 end

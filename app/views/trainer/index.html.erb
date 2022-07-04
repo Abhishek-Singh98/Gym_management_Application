@@ -1,0 +1,19 @@
+<h1>This is Trainers list</h1>
+<table>
+<thead>
+<tr>
+<th> Name </th> 
+<th> Gym Association </th> 
+<th colspan = "3"> Action </th> 
+</tr>
+</thead>
+<tbody> <%= @trainer.each do |trainer|%>
+<tr>
+<td> <%= trainer.Name %> </td>
+<td> Gym Assosiation </td>
+<td> <%= link_to 'Details', trainer_path(trainer) %> </td>
+</tr>
+</tbody>
+<%end%>
+</table>
+<p> <%= link_to 'Back to Main Page', 'Main' %> </p>

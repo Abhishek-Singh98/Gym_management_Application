@@ -1,0 +1,21 @@
+<h1>This is Gyms list</h1>
+<table>
+<thead>
+<tr>
+<th> Name </th>
+<th> City </th>
+<th> Description </th>
+<th colspan = "3"> Action </th>
+</tr>
+</thead>
+<tbody> <%= @gym.each do |gym|%>
+<tr>
+<td> <%= gym.Name %> </td>
+<td> <%= gym.City %> </td>
+<td> <%= gym.Description %> </td>
+<td> <%= link_to 'Details', gym_path(gym) %> </td>
+</tr>
+</tbody>
+<%end%>
+</table>
+<p> <%= link_to 'Back to Main Page', 'Main' %> </p>
