@@ -7,11 +7,11 @@
 <th colspan = "3"> Action </th> 
 </tr>
 </thead>
-<tbody> <%= @trainer.each do |trainers|%>
+<tbody> <%= @trainers.each do |trainer|%>
 <tr>
-<td> <%= trainers.Name %> </td>
+<td> <%= trainer.Name %> </td>
 <td> Gym Assosiation </td>
-<td> <%= link_to 'Details', 'trainers' %> </td>
+<td> <%= link_to 'Details', 'trainer_path' %> </td>
 </tr>
 </tbody>
 <%end%>

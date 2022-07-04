@@ -1,9 +1,9 @@
 class GymsController < ApplicationController
     def show
-        @gym = Gyms.find(params[:id]) 
+        @gyms = Gym.find(params[:id]) 
     end
 
     def index
-        @gym = Gyms.all
+        @gyms = Gym.all
     end
 end

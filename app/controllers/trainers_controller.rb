@@ -1,9 +1,9 @@
 class TrainersController < ApplicationController
     def show
-        @trainer = Trainers.find(params[:id])
+        @trainers = Trainer.find(params[:id])
     end
 
     def index
-        @trainer= Trainers.all
+        @trainers = Trainer.all
     end
 end
