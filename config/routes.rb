@@ -5,4 +5,5 @@ Rails.application.routes.draw do
     get'/Main' , to: 'home#first'
     resources :trainer , only: [:show,:index]
     resources :gym , only: [:show,:index]
+    resources :review, only: [:show, :index, :new, :create]
 end

@@ -1,0 +1,13 @@
+<h1>This is the review page</h1>
+
+<%= form_with scope: :review , url: review_index_path , local: true do |f|%>
+
+<p>
+<%= f.label :description%> </br>
+<%= f.text_area :description%>
+</p>
+
+<p>
+<%= f.submit%>
+</p>
+<%end%>

@@ -7,7 +7,7 @@ class CreateTrainees < ActiveRecord::Migration[6.0]
       t.string :City
       t.string :Contact
       t.text :Description
-
+      add_column :trainees, :gym_id, :int
       t.timestamps
     end
   end
